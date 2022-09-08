@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/assets/favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+    @layer base {
+      html {
+        @apply text-[16px] text-white;
+      }
+      * {
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      }
+      body {
+
+      }
+    }
+    @layer utilities{
+      .center{
+        @apply justify-center items-center
+      }
+      .start{
+        @apply justify-start items-start
+      }
+      .colorful-text{
+        @apply text-slate-700
+      }
+      #date{
+        @apply text-slate-500
+      }
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#314D47',
+            secondary: '#1E2024',
+          },
+          width: {
+            a4: '210mm',
+          },
+          height: {
+            a4: '297mm',
+          },
+        }
+      }
+    }
+  </script>
+  <title>Ekrem Can DEVE - cv</title>
+</head>
+<body>
+  <article>
+    <div id="page" class="flex lg:flex-row flex-col mx-auto h-auto max-w-[1000px] bg-slate-50">
+      <section id="left-side" class="flex flex-col h-full w-1/4 bg-slate-900 pb-12">
+        <div class="pb-8">
+          <img src="https://res.cloudinary.com/notcan/image/upload/v1662109138/cv/profile_yp4tcu.jpg" alt="Ekrem Can DEVE">
+        </div>
+        <div class="flex flex-col space-y-12">
+          <div id="contact">
+            <div id="email">
+              <div class="flex flex-row bg-slate-700">
+              <div class="w-16 h-8 bg-primary"></div>
+              <div class="h-8  flex justify-start items-center">
+                <p class="pl-2 font-medium text-lg">Email</p>
+              </div>
+            </div>
+            <div class="text-sm pl-16">
+              <div id="email" class="flex flex-col start p-2">
+                <a href="mailto:devecann@gmail.com" target="_blank">devecann@gmail.com</a>
+              </div>
+            </div>
+            </div>
+            <div id="phone">
+              <div class="flex flex-row bg-slate-700">
+              <div class="w-16 h-8 bg-primary"></div>
+              <div class="h-8  flex justify-start items-center">
+                <p class="pl-2 font-medium text-lg">Telefon</p>
+              </div>
+            </div>
+            <div class="text-sm pl-16">
+              <div id="email" class="flex flex-col start p-2">
+                <a href="tel:+905368259986" target="_blank">+905368259986</a>
+              </div>
+            </div>
+            </div>
+            <div id="address">
+              <div class="flex flex-row bg-slate-700">
+              <div class="w-16 h-8 bg-primary"></div>
+              <div class="h-8  flex justify-start items-center">
+                <p class="pl-2 font-medium text-lg">Adres</p>
+              </div>
+            </div>
+            <div class="text-sm pl-16">
+              <div id="email" class="flex flex-col start p-2">
+                <a href="https://goo.gl/maps/o2xyQsmk1y2wf8VU6" target="_blank">Ankara/Türkiye</a>
+              </div>
+            </div>
+            </div>
+            <div id="web">
+              <div class="flex flex-row bg-slate-700">
+              <div class="w-16 h-8 bg-primary"></div>
+              <div class="h-8  flex justify-start items-center">
+                <p class="pl-2 font-medium text-lg">Web Sayfası</p>
+              </div>
+            </div>
+            <div class="text-sm pl-16">
+              <div id="email" class="flex flex-col start p-2">
+                <a href="https://devecann.vercel.app" target="_blank">devecann.vercel.app</a>
+              </div>
+            </div>
+            </div>
+            <div id="github">
+              <div class="flex flex-row bg-slate-700">
+              <div class="w-16 h-8 bg-primary"></div>
+              <div class="h-8  flex justify-start items-center">
+                <p class="pl-2 font-medium text-lg">Github</p>
+              </div>
+            </div>
+            <div class="text-sm pl-16">
+              <div id="email" class="flex flex-col start p-2">
+                <a href="https://github.com/notCan" target="_blank">notCan</a>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div id="skills" class="pl-4">
+            <div class="py-2 border-b-2">
+            <h3>Skills</h3>
+            </div>
+            <div class="grid grid-cols-1 gap-2 justify-center items-center pt-4 pr-4">
+              <div class="flex flex-row space-x-4 justify-start items-center">
+                <p>HTML</p>
+                <div class="flex flex-row w-full justify-end items-center">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                </div>
+              </div>
+              <div class="flex flex-row space-x-4 justify-start items-center">
+                <p>CSS</p>
+                <div class="flex flex-row w-full justify-end items-center">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/line.svg" alt="skill star">
+                </div>
+              </div>
+              <div class="flex flex-row space-x-4 justify-start items-center">
+                <p>Sass</p>
+                <div class="flex flex-row w-full justify-end items-center">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/line.svg" alt="skill star">
+                  <img src="/assets/line.svg" alt="skill star">
+                </div>
+              </div>
+              <div class="flex flex-row space-x-4 justify-start items-center">
+                <p>Less</p>
+                <div class="flex flex-row w-full justify-end items-center">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/line.svg" alt="skill star">
+                  <img src="/assets/line.svg" alt="skill star">
+                </div>
+              </div>
+              <div class="flex flex-row space-x-4 justify-start items-center">
+                <p>Bootstrap</p>
+                <div class="flex flex-row w-full justify-end  items-center">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                </div>
+              </div>
+              <div class="flex flex-row space-x-4 justify-start items-center">
+                <p>Tailwind</p>
+                <div class="flex flex-row w-full justify-end  items-center">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                </div>
+              </div>
+              <div class="flex flex-row space-x-4 justify-start items-center">
+                <p>JavaScript</p>
+                <div class="flex flex-row w-full justify-end  items-center">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/line.svg" alt="skill star">
+                </div>
+              </div>
+              <div class="flex flex-row space-x-4 justify-start items-center">
+                <p>TypeScript</p>
+                <div class="flex flex-row w-full justify-end  items-center">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/line.svg" alt="skill star">
+                  <img src="/assets/line.svg" alt="skill star">
+                </div>
+              </div>
+              <div class="flex flex-row space-x-4 justify-start items-center">
+                <p>NodeJS</p>
+                <div class="flex flex-row w-full justify-end  items-center">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/line.svg" alt="skill star">
+                </div>
+              </div>
+              <div class="flex flex-row space-x-4 justify-start items-center">
+                <p>VueJS</p>
+                <div class="flex flex-row w-full justify-end  items-center">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/line.svg" alt="skill star">
+                </div>
+              </div>
+              <div class="flex flex-row space-x-4 justify-start items-center">
+                <p>NuxtJS</p>
+                <div class="flex flex-row w-full justify-end  items-center">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/line.svg" alt="skill star">
+                </div>
+              </div>
+              <div class="flex flex-row space-x-4 justify-start items-center">
+                <p>Express</p>
+                <div class="flex flex-row w-full justify-end  items-center">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/line.svg" alt="skill star">
+                  <img src="/assets/line.svg" alt="skill star">
+                </div>
+              </div>
+              <div class="flex flex-row space-x-4 justify-start items-center">
+                <p>NestJS</p>
+                <div class="flex flex-row w-full justify-end  items-center">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/line.svg" alt="skill star">
+                  <img src="/assets/line.svg" alt="skill star">
+                </div>
+              </div>
+              <div class="flex flex-row space-x-4 justify-start items-center">
+                <p>Dart</p>
+                <div class="flex flex-row w-full justify-end  items-center">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/line.svg" alt="skill star">
+                  <img src="/assets/line.svg" alt="skill star">
+                </div>
+              </div>
+              <div class="flex flex-row space-x-4 justify-start items-center">
+                <p>Flutter</p>
+                <div class="flex flex-row w-full justify-end  items-center">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/line.svg" alt="skill star">
+                  <img src="/assets/line.svg" alt="skill star">
+                </div>
+              </div>
+              <div class="flex flex-row space-x-4 justify-start items-center">
+                <p>Spring</p>
+                <div class="flex flex-row w-full justify-end  items-center">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/line.svg" alt="skill star">
+                  <img src="/assets/line.svg" alt="skill star">
+                  <img src="/assets/line.svg" alt="skill star">
+                </div>
+              </div>
+              <div class="flex flex-row space-x-4 justify-start items-center">
+                <p>Git</p>
+                <div class="flex flex-row w-full justify-end  items-center">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                </div>
+              </div>
+              <div class="flex flex-row space-x-4 justify-start items-center">
+                <p>Github/Gitlab</p>
+                <div class="flex flex-row w-full justify-end  items-center">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                </div>
+              </div>
+              <div class="flex flex-row space-x-4 justify-start items-center">
+                <p>Bitbucket</p>
+                <div class="flex flex-row w-full justify-end  items-center">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                </div>
+              </div>
+              <div class="flex flex-row space-x-4 justify-start items-center">
+                <p>PostgreSQL</p>
+                <div class="flex flex-row w-full justify-end  items-center">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/line.svg" alt="skill star">
+                </div>
+              </div>
+              <div class="flex flex-row space-x-4 justify-start items-center">
+                <p>MongoDB</p>
+                <div class="flex flex-row w-full justify-end  items-center">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/line.svg" alt="skill star">
+                </div>
+              </div>
+              <div class="flex flex-row space-x-4 justify-start items-center">
+                <p>Firebase</p>
+                <div class="flex flex-row w-full justify-end  items-center">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/line.svg" alt="skill star">
+                  <img src="/assets/line.svg" alt="skill star">
+                </div>
+              </div>
+              <div class="flex flex-row space-x-4 justify-start items-center">
+                <p>Docker</p>
+                <div class="flex flex-row w-full justify-end  items-center">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/fill.svg" alt="skill star">
+                  <img src="/assets/line.svg" alt="skill star">
+                  <img src="/assets/line.svg" alt="skill star">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="right-side" class="w-3/4 max-w-3/4 h-full">
+        <div id="name-title" class="py-12 h-[250px]">
+          <div class="bg-primary w-full h-full p-10">
+            <h1 class="font-bold text-4xl">EKREM CAN DEVE</h1>
+            <h2 class="font-semibold text-2xl">Computer Engineer</h2>
+          </div>
+        </div>
+        <div class="text-black p-8">
+          <div id="summary" class="pb-6">
+          <h3 class="font-bold text-2xl pb-2">Summary</h3>
+          <p class="colorful-text">I’m detail-oriented Computer Engineer. I experienced my object oriented
+programming knowledge by learning Java, C# software languages and
+developing many projects. I’m currently working for full stack
+developmen and pixel art. I’m trying to learn about microservices rn.</p>
+        </div>
+        <div id="experience">
+          <h3 class="font-bold text-2xl pb-2">Experiences</h3>
+          <div class="flex flex-col justify-center items-start pb-4">
+            <div class="flex flex-row justify-center items-start space-x-2 text-lg pb-1">
+            <p id="company" class="font-medium">Lanista Software,</p><p id="location">Van/Turkey,</p><p id="title" class="italic">Jr. Frontend Developer</p>
+            </div>
+            <div id="date" class="text-sm pb-1">
+              <small>May 2022</small><small> - </small><small>Current</small>
+            </div>
+            <div class="pl-2">
+              <p class="colorful-text">
+                After internship i started as a frontend developer and continued company projects. I learn a lot git based CMSs and API based CMSs. And i work with server side frontend frameworks like nuxt and next. And i learn about microservices for improved backends.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center items-start pb-4">
+            <div class="flex flex-row justify-center items-start space-x-2 text-lg pb-1">
+            <p id="company" class="font-medium">Lanista Software,</p><p id="location">Van/Turkey,</p><p id="title" class="italic">Software Developer Intern</p>
+            </div>
+            <div id="date" class="text-sm pb-1">
+              <small>Feb 2022</small><small> - </small><small>May 2022</small>
+            </div>
+            <div class="pl-2">
+              <p class="colorful-text">
+                I started as a full stack developer in here. Afterwards i continued as a frontend developer because i have more experience in this area and i wanted to improve myself frontend development and server side development frameworks.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center items-start pb-4">
+            <div class="flex flex-row justify-center items-start space-x-2 text-lg pb-1">
+            <p id="company" class="font-medium">TR Eğitim ve Teknoloji A.Ş.,</p><p id="location">Ankara/Turkey,</p><p id="title" class="italic">Mobile App Developer</p>
+            </div>
+            <div id="date" class="text-sm pb-1">
+              <small>Aug 2021</small><small> - </small><small>Sept 2021</small>
+            </div>
+            <div class="pl-2">
+              <p class="colorful-text">
+                Me and my team started a mobile project for a web page. Web page is a LMS. With this project university students can meet experienced peoples and this experienced peoples can creates courses in this system. We used flutter and dart for this project. Also i learn bloc/cubit for state management. And i work with third party api.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center items-start pb-4">
+            <div class="flex flex-row justify-center items-start space-x-2 text-lg pb-1">
+            <p id="company" class="font-medium">TR Eğitim ve Teknoloji A.Ş.,</p><p id="location">Ankara/Turkey,</p><p id="title" class="italic">Software Developer Intern</p>
+            </div>
+            <div id="date" class="text-sm pb-1">
+              <small>July 2021</small><small> - </small><small>Aug 2021</small>
+            </div>
+            <div class="pl-2">
+              <p class="colorful-text">
+                Me and my team developed a test module for VizyonerGenç. Our motivation in developing this project was that the employer can choose better employees for job. I used nestjs for backend development and we use vuejs for frontend and mongodb. I wrote my codes with the code-first approach.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="education">
+          <h3 class="font-bold text-2xl pb-2">Education</h3>
+          <div class="p-2">
+          <h4 class="font-semibold">Bilgisayar Mühendisliği</h4>
+          <h5>Süleyman Demirel Üniversitesi</h5>
+          <div class="flex flex-row justify-between items-center text-slate-500">
+            <p>2017-2021</p>
+            <p>2.99/4.00</p>
+          </div>
+        </div>
+        <div class="p-2">
+          <h4 class="font-semibold">Sayısal</h4>
+          <h5>Prof. Dr. Necati Erşen Anadolu Lisesi</h5>
+          <div class="flex flex-row justify-between items-center text-slate-500">
+            <p>2013-2017</p>
+            <p>80,85/100</p>
+          </div>
+        </div>
+        </div>
+        </div>
+      </section>
+    </div>
+  </article>
+</body>
+</html>
